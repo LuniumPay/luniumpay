@@ -1,0 +1,19 @@
+name: Problema técnico
+description: Erro de API, webhook, sandbox ou skill. Inclua o request_id; nunca a chave.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: endpoint
+    attributes: { label: "Endpoint ou skill", placeholder: "ex.: POST /cashin/charge · luniumpay-pix-charge" }
+    validations: { required: true }
+  - type: input
+    id: request_id
+    attributes: { label: "request_id do erro (vem no corpo da resposta)" }
+  - type: textarea
+    id: esperado
+    attributes: { label: "O que esperava e o que aconteceu", description: "Cole o corpo do erro (erro, acao, detail, agent_guidance). Sem chaves, sem CPF completo." }
+    validations: { required: true }
+  - type: dropdown
+    id: ambiente
+    attributes: { label: "Ambiente", options: ["Sandbox (lun_test_)", "Produção (lun_live_)"] }

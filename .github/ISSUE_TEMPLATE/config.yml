@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Falar com um humano (e-mail)
+    url: mailto:contato@luniumpay.com
+    about: Integração, volume, condições comerciais.
+  - name: Lunium Partners (Telegram)
+    url: https://t.me/+FerOZMRRP_g5MDk5
+    about: Comunidade oficial de integradores, avisos operacionais e mudanças da API.
+  - name: Documentação
+    url: https://docs.luniumpay.com
+    about: OpenAPI, manual, sandbox, llms.txt.

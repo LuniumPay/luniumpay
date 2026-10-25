@@ -1,0 +1,32 @@
+name: Quero integrar a LuniumPay
+description: Conte o que você está construindo e nós indicamos o caminho mais curto (chave, fluxo, limites).
+title: "[integração] "
+labels: ["integração"]
+body:
+  - type: markdown
+    attributes:
+      value: "Obrigado! Responda em português ou inglês. Nunca cole chaves ou segredos aqui."
+  - type: input
+    id: produto
+    attributes: { label: "O que você está construindo?", placeholder: "ex.: marketplace, SaaS, loja, app de remessa, bot" }
+    validations: { required: true }
+  - type: dropdown
+    id: fluxo
+    attributes:
+      label: "Fluxo principal"
+      options: ["Receber Pix e cair em USDT/USDC na carteira", "Receber Pix em saldo em reais e sacar depois", "Pagar Pix com cripto (cash-out)", "Carteira USDT: pagar Pix com USDT", "Verificar Pix (sem chave)", "Ainda não sei"]
+    validations: { required: true }
+  - type: dropdown
+    id: stack
+    attributes:
+      label: "Stack"
+      options: ["Next.js / Node", "Python", "Supabase", "PHP", "Outra", "Low-code / agente de IA"]
+  - type: input
+    id: volume
+    attributes: { label: "Volume esperado por mês (aproximado)", placeholder: "ex.: R$ 50 mil" }
+  - type: textarea
+    id: contexto
+    attributes: { label: "Contexto e dúvidas", placeholder: "O que já tentou, onde travou, prazos." }
+  - type: input
+    id: contato
+    attributes: { label: "E-mail para retorno (opcional)" }
